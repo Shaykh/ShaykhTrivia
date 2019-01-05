@@ -1,6 +1,7 @@
 # ShaykhTrivial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+It is a trivia game
 
 ## Development server
 
