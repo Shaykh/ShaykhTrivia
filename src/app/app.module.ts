@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
+import { routes } from './app.route';
 import { CategoryService } from './services/category.service';
 import { QuestionService } from './services/question.service';
 import { TagService } from './services/tag.service';
@@ -20,7 +22,8 @@ import { TagsComponent } from './components/tags/tags.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [
     CategoryService,
