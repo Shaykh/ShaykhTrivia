@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { CategoryService } from './services/category.service';
 import { QuestionService } from './services/question.service';
@@ -18,7 +19,8 @@ import { TagsComponent } from './components/tags/tags.component';
     TagsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [
     CategoryService,
