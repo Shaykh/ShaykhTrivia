@@ -16,7 +16,7 @@ export class QuestionService {
   constructor(private http: HttpClient) { }
 
   emitQuestions() {
-    this.questionSubject.next(this.questions.slice());
+    this.questionSubject.next(this.questions);
   }
 
   getQuestions() {
