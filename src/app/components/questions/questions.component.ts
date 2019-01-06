@@ -22,7 +22,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
           this.questions = questions;
         }
       );
-      this.questionService.emitQuestions();
+    this.questionService.emitQuestions();
   }
 
   ngOnDestroy() {
