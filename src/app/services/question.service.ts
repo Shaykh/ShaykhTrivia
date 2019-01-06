@@ -13,7 +13,9 @@ export class QuestionService {
   questions: Question[];
   questionSubject = new Subject<Question[]>();
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.getQuestions();
+  }
 
   emitQuestions() {
     this.questionSubject.next(this.questions);

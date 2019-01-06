@@ -11,7 +11,9 @@ export class TagService {
   tags: any[];
   tagSubject = new Subject<any[]>();
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.getTags();
+  }
 
   emitTags() {
     this.tagSubject.next(this.tags);
