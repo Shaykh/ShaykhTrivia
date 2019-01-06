@@ -14,7 +14,7 @@ export class TagService {
   constructor(private http: HttpClient) { }
 
   emitTags() {
-    this.tagSubject.next(this.tags.slice());
+    this.tagSubject.next(this.tags);
   }
 
   getTags() {
