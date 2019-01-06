@@ -13,10 +13,12 @@ export class CategoryService {
   categories: Category[];
   categorieSubject = new Subject<Category[]>();
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.getCategories();
+  }
 
   emitCategories() {
-    this.categorieSubject.next(this.categories.slice());
+    this.categorieSubject.next(this.categories);
   }
 
   getCategories() {
