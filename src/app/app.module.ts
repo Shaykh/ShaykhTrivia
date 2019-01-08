@@ -3,8 +3,11 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import 'hammerjs';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatCardModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatChipsModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { routes } from './app.route';
 import { CategoryService } from './services/category.service';
@@ -35,7 +38,10 @@ import { ShaykhNavbarComponent } from './shaykh-navbar/shaykh-navbar.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatChipsModule,
+    FlexLayoutModule
   ],
   providers: [
     CategoryService,

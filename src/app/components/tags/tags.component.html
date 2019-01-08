@@ -1,6 +1,8 @@
-<h3>Tags</h3>
-<ul>
-  <li *ngFor="let tag of tags">
-    <span>{{ tag }}</span>
-  </li>
-</ul>
+<mat-card>
+  <mat-card-title>Tags</mat-card-title>
+  <mat-chip-list>
+    <mat-chip *ngFor="let tag of tags">
+      <span>{{ tag }}</span>
+    </mat-chip>
+  </mat-chip-list>
+</mat-card>
