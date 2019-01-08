@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import 'hammerjs';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatCardModule, MatIconModule, MatListModule } from '@angular/material';
@@ -41,7 +42,9 @@ import { ShaykhNavbarComponent } from './shaykh-navbar/shaykh-navbar.component';
     MatListModule,
     MatCardModule,
     MatChipsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     CategoryService,
